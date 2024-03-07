@@ -1,0 +1,51 @@
+
+version: '3.4'
+
+networks:
+  my_network:
+    driver: bridge
+
+services:
+  web:
+    image: mikailtorun/moviereact:02
+    ports:
+      - "3000:3000"
+    depends_on:
+      - moviestream.webapi
+    networks:
+        - my_network
+
+  moviestream.webapi:
+    image: mikailtorun/movie:02
+    container_name: moviestreamwebapi
+    ports:
+      - "5000:8080"
+      - "5001:8081" 
+    depends_on:
+      - moviestreamdb
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__DefaultConnection: "Server=moviestreamdb,1433; Initial Catalog=MovieStream; User Id=sa; Password=Abcd1234.Abcd1234.;TrustServerCertificate=True;"
+      Token__Audience: "www.benuretiyorum.com"
+      Token__Issuer: "www.benkullaniiyorum.com"
+      Token__Key: "Ne sabahtiir bu mavilik ne akssam __1278"
+      AllowedHosts: "*"
+    networks:
+        - my_network
+
+  moviestreamdb:
+    image: "mcr.microsoft.com/mssql/server:latest"
+    container_name: moviestreamdb
+    environment:
+      SA_PASSWORD: "Abcd1234.Abcd1234."
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - db-data:/var/opt/mssql
+    networks:
+        - my_network
+
+volumes:
+    db-data:
+

@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{FCA6E68B-7906-475D-99E9-3FBF6EF521D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{258664DC-98C9-4629-928F-9A0F7900E611}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4288473D-9984-4782-A033-BA884116BAA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStream.Domain", "Core\MovieStream.Domain\MovieStream.Domain.csproj", "{5E9DA645-4B09-4279-AC82-0418365CD6D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStream.Application", "Core\MovieStream.Application\MovieStream.Application.csproj", "{705B5255-14DF-4900-9C78-951A33C1DB04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStream.Infrastructure", "Infrastructure\MovieStream.Infrastructure\MovieStream.Infrastructure.csproj", "{24EA404A-C5C5-490A-BA1C-E6FDC6C29F63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStream.Persistence", "Infrastructure\MovieStream.Persistence\MovieStream.Persistence.csproj", "{40AA78CD-8B70-4433-BA24-70209440EB81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStream.WebAPI", "Presentation\MovieStream.WebAPI\MovieStream.WebAPI.csproj", "{E0A419A2-3788-4A75-9219-1B4B7A1B6306}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9C4FB96B-8CC1-4564-92F5-B43E8CC5EC20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E9DA645-4B09-4279-AC82-0418365CD6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9DA645-4B09-4279-AC82-0418365CD6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9DA645-4B09-4279-AC82-0418365CD6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9DA645-4B09-4279-AC82-0418365CD6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{705B5255-14DF-4900-9C78-951A33C1DB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{705B5255-14DF-4900-9C78-951A33C1DB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{705B5255-14DF-4900-9C78-951A33C1DB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{705B5255-14DF-4900-9C78-951A33C1DB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24EA404A-C5C5-490A-BA1C-E6FDC6C29F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EA404A-C5C5-490A-BA1C-E6FDC6C29F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EA404A-C5C5-490A-BA1C-E6FDC6C29F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EA404A-C5C5-490A-BA1C-E6FDC6C29F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40AA78CD-8B70-4433-BA24-70209440EB81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40AA78CD-8B70-4433-BA24-70209440EB81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40AA78CD-8B70-4433-BA24-70209440EB81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40AA78CD-8B70-4433-BA24-70209440EB81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A419A2-3788-4A75-9219-1B4B7A1B6306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A419A2-3788-4A75-9219-1B4B7A1B6306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A419A2-3788-4A75-9219-1B4B7A1B6306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A419A2-3788-4A75-9219-1B4B7A1B6306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4FB96B-8CC1-4564-92F5-B43E8CC5EC20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4FB96B-8CC1-4564-92F5-B43E8CC5EC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4FB96B-8CC1-4564-92F5-B43E8CC5EC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4FB96B-8CC1-4564-92F5-B43E8CC5EC20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E9DA645-4B09-4279-AC82-0418365CD6D8} = {258664DC-98C9-4629-928F-9A0F7900E611}
+		{705B5255-14DF-4900-9C78-951A33C1DB04} = {258664DC-98C9-4629-928F-9A0F7900E611}
+		{24EA404A-C5C5-490A-BA1C-E6FDC6C29F63} = {4288473D-9984-4782-A033-BA884116BAA0}
+		{40AA78CD-8B70-4433-BA24-70209440EB81} = {4288473D-9984-4782-A033-BA884116BAA0}
+		{E0A419A2-3788-4A75-9219-1B4B7A1B6306} = {FCA6E68B-7906-475D-99E9-3FBF6EF521D7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D192DD4-703E-4D2D-90D6-A629732C70E8}
+	EndGlobalSection
+EndGlobal
