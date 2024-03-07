@@ -1,5 +1,6 @@
 # Movie-Streaming-Application
 
+Simply, there are login and register pages for users. In the system, you can generate random data and mark those data. It is focesed to connect the communication of the services and dockerize processes
 
 ## Used Technolegies Stack and Features
 
