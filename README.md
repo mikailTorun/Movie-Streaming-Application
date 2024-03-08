@@ -26,11 +26,8 @@ Simply, there are login and register pages for users. In the system, you can gen
 
 you can download the docker-compose file and at that directory, run this docker command
 ```bash 
-  
-
 docker-compose up
-
 ```
-react application will host from localhost:3000 port
+react application will host from localhost:3000 port.
 To run this command, docker must be installed your machine
   Thats all.
